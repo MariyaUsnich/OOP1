@@ -1,13 +1,19 @@
 public class Main {
+    static int count = 0;
     public static void main(String[] args) {
-        ObjectCat Cat1 = new ObjectCat();
-
-        Cat1.catName = "Marsik";
-        Cat1.catAge = 7;
-        Cat1.catColor = "red";
-        Cat1.catWeight = 5.5;
-
-        System.out.println(Cat1.toString());
-        System.out.println();
+        boolean isFat = Cat.isFat();
+        Cat Cat1 = new Cat();
+        count++;
+        System.out.println(Cat1);
+        System.out.println(isFat);
+        Cat Cat2 = new Cat("Marsik", 7, "red", 11);
+        count++;
+        System.out.println(Cat2);
+        System.out.println(isFat);
+        System.out.println("Total number of cats is " + count);
+        System.out.println("My cat's name is " + Cat2.catName + ". " + "He is " + Cat2.catAge + ". " + "He is " + Cat2.catColor + ". " + "He weights " + Cat2.catWeight + " kilos.");
     }
-}
+
+    }
+
+
