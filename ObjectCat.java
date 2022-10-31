@@ -24,9 +24,7 @@ class Cat {
         return returnString;
     }
     public static boolean isFat(){
-        if (catWeight > 10.0)
-        return true;
-        else return false;
+        return (catWeight > 10.0);
     }
     }
 
